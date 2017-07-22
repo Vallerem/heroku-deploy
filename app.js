@@ -17,7 +17,6 @@ const siteController     = require("./routes/siteController");
 const locationController = require("./routes/locationController");
 
 // Mongoose configuration
-mongoose.connect("mongodb://localhost/deploy-exercise");
 mongoose.connect(process.env.MONGODB_URI);
 
 // Middlewares configuration
